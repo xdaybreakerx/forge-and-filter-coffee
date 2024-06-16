@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const themeToggle = document.getElementById('theme-toggle');
+  const themeToggle = document.querySelector('.theme-controller');
 
   // Apply the saved theme from local storage on page load
   const savedTheme = localStorage.getItem('theme') || 'light';
@@ -15,7 +15,5 @@ document.addEventListener('DOMContentLoaded', function () {
       document.documentElement.setAttribute('data-theme', 'light');
       localStorage.setItem('theme', 'light'); // Save theme to local storage
     }
-
-    
   });
 });
