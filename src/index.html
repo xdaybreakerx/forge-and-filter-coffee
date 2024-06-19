@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cup.</title>
+    <link rel="icon" type="image/x-icon" href="./img/icon.png">
     <link href="output.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container mx-auto p-4" id="header">
       <h1 class="text-3xl font-bold">cup.</h1>
       <label class="flex cursor-pointer gap-2">
-        <!-- coffee cup icon -->
-        <svg
+        <!-- sun icon -->
+        <svg id="sun-icon"
           xmlns="http://www.w3.org/2000/svg"
           width="20"
           height="20"
@@ -29,8 +30,8 @@
         </svg>
         <!-- hidden toggle to change theme -->
         <input type="checkbox" value="coffee" class="toggle theme-controller" />
-        <!-- moon cup icon -->
-        <svg
+        <!-- moon icon -->
+        <svg id="moon-icon"
           xmlns="http://www.w3.org/2000/svg"
           width="20"
           height="20"
@@ -43,200 +44,149 @@
         >
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
-        
+      </label>
     </div>
-    <div class="container mx-auto p-4">
-        <section id="about">
-          <h2 class="text-2xl font-bold mb-4">About</h2>
-          <p>Our humble little espresso bar showcases some of the best coffees in the world. We put the time in to hand select all of our coffee and meticulously roasting all of our own coffee.</p>
-          <p>Coffee + Eats in Kilsyth </p>
-        </section>
-        
-        <section id="menu" class="mt-8">
-          <h2 class="text-2xl font-bold mb-4">Menu</h2>
 
-          <div class="overflow-x-auto">
-            <table class="table">
-              <!-- head -->
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>COFFEE</th>
-                  <th>DESCRIPTION</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!-- row 1 -->
-                <tr>
-                  <td>ESPRESSO.</td>
-                </tr>
-                <!-- row 2 -->
-                <tr>
-                    <td></td>
-                    <td>WHITE</td>
-                    <td>cup. HOUSE BLEND</td>
-                </tr>
-                  <!-- row 3 -->
-                <tr>
-                    <td></td>
-                    <td>BLACK</td>
-                    <td>KAMIKAZE PREMIUM BLEND</td>
-                </tr> 
-                <!-- row 4 -->
-                <tr>
-                    <td>SPECIALTY.</td>
-                </tr>
-                <!-- row 5 - specialty 1 -->
-                <tr>
-                    <td></td>
-                    <td>CHAI LATTE</td>
-                    <td>HAKANOA SPICED CHAI</td>
-                </tr>
-                <!-- row 6 - specialty 2 -->
-                <tr>
-                    <td></td>
-                    <td>HOT CHOCOLATE</td>
-                    <td>32% COCOA (VE, GF)</td>
-                </tr> 
-                <!-- row 7 - specialty 3 -->
-                <tr>
-                    <td></td>
-                    <td>WHITE CHOCOLATE</td>
-                    <td>FRAUS D'LUX</td>
-                </tr>
-                <!-- row 8 - specialty 4 -->
-                <tr>
-                    <td></td>
-                    <td>HOT MILO</td>
-                    <td></td>
-                </tr>   
-                <!-- row 9 - specialty 5 -->
-                <tr>
-                    <td></td>
-                    <td>MATCHA LATTE</td>
-                    <td>KONOMI</td>
-                </tr>
-                <!-- row 10 -->
-                <tr>
-                    <td>FILTER.</td>
-                </tr>
-                <!-- row 11 - filter 1 -->
-                <tr>
-                    <td></td>
-                    <td>BATCH BREW</td>
-                    <td>DAILY FILTER OFFERING</td>
-                </tr> 
-                <!-- row 12 - filter 2 -->
-                <tr>
-                    <td></td>
-                    <td>COLD BREW</td>
-                    <td>SNAP CHILLED SPECIALTY SINGLE ORIGIN</td>
-                </tr>
-                <!-- row 13 - filter 3 -->
-                <tr>
-                    <td></td>
-                    <td>V60</td>
-                    <td>EXOTIC & RARE FILTER SPECIALTY COFFEE</td>
-                </tr>   
-                <!-- row 14 - filter 4 -->
-                <tr>
-                    <td></td>
-                    <td>BARISTA FLIGHT</td>
-                    <td>EESPRESSO, FLAT WHITE, FILTER COFFEE - BARISTA'S CHOICE</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </section>
+    
 
-        <!-- 
-        ESPRESSO.
-        
+      <div class="container flex-col mx-auto p-4 pb-4">
+          <section class="mb-4" id="about">
+            <h2 class="text-2xl font-bold">About</h2>
+            <p>Our humble little espresso bar showcases some of the best coffees in the world. We put in the time to hand select and meticulously roast all of our own coffee.</p>
+            <p>We offer Coffee + Eats, and Specialty Brews.</p>
+          </section>
 
-        WHITE
-        cup. HOUSE BLEND
-        3.5
-        
-        BLACK
-        KAMIKAZE PREMIUM BLEND 
-        3.5 
+             
+          
+          <section id="menu" class="mt-8 pb-6 ">
+            <h2 class="text-2xl font-bold mb-4">Menu</h2>
 
-        SPECIALTY. 
-
-
-        CHAI LATTE
-        HAKANOA SPICED CHAI 
-        5.0
-
-        HOT CHOCOLATE
-        32% COCOA (VE, GF)
-        4.0
-
-        WHITE CHOCOLATE
-        FRAUS D'LUX
-        4.0
-
-        HOT MILO
-        4.0
-
-        MATCHA LATTE
-        KONOMI
-        5.0
-
-        FILTER.
-
-
-        BATCH BREW
-        DAILY FILTER OFFERING
-        4.0
-
-        COLD BREW
-        SNAP CHILLED SPECIALTY SINGLE ORIGIN 
-        5.0
-
-        V60
-        EXOTIC & RARE FILTER SPECIALTY COFFEE
-        10.0
-
-        BARISTA FLIGHT
-        EESPRESSO, FLAT WHITE, FILTER COFFEE - BARISTA'S CHOICE
-        10.0
-        -->
-        
-        <section id="team" class="mt-8">
-          <h2 class="text-2xl font-bold mb-4">Meet the Team</h2>
-          <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="team-display">
-            <div class="card">
-              <img src="./img/corey.png" alt="corey">
-              <h3 class="text-xl font-bold">corey</h3>
-              <p>Meet Corey!
-                A well seasoned coffee expert with over 15 years experience on the bar.
-                As well as being a competition level barista, he’s also the head of coffee and wholesale accounts at @motobeanroasters .
-                
-                Got coffee questions? Fire them all at this man, to find your answers!</p>
+            <div class="overflow-x-auto">
+              <table class="table">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>COFFEE</th>
+                    <th>DESCRIPTION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- row 1 -->
+                  <tr>
+                    <td>ESPRESSO.</td>
+                  </tr>
+                  <!-- row 2 -->
+                  <tr>
+                      <td></td>
+                      <td>WHITE</td>
+                      <td>cup. HOUSE BLEND</td>
+                  </tr>
+                    <!-- row 3 -->
+                  <tr>
+                      <td></td>
+                      <td>BLACK</td>
+                      <td>KAMIKAZE PREMIUM BLEND</td>
+                  </tr> 
+                  <!-- row 4 -->
+                  <tr>
+                      <td>SPECIALTY.</td>
+                  </tr>
+                  <!-- row 5 - specialty 1 -->
+                  <tr>
+                      <td></td>
+                      <td>CHAI LATTE</td>
+                      <td>HAKANOA SPICED CHAI</td>
+                  </tr>
+                  <!-- row 6 - specialty 2 -->
+                  <tr>
+                      <td></td>
+                      <td>HOT CHOCOLATE</td>
+                      <td>32% COCOA (VE, GF)</td>
+                  </tr> 
+                  <!-- row 7 - specialty 3 -->
+                  <tr>
+                      <td></td>
+                      <td>WHITE CHOCOLATE</td>
+                      <td>FRAUS D'LUX</td>
+                  </tr>
+                  <!-- row 8 - specialty 4 -->
+                  <tr>
+                      <td></td>
+                      <td>MATCHA LATTE</td>
+                      <td>KONOMI</td>
+                  </tr>   
+                  <!-- row 9 - specialty 5 -->
+                  <tr>
+                      <td></td>
+                      <td>HOT MILO</td>
+                      <td></td>
+                  </tr>
+                  <!-- row 10 -->
+                  <tr>
+                      <td>FILTER.</td>
+                  </tr>
+                  <!-- row 11 - filter 1 -->
+                  <tr>
+                      <td></td>
+                      <td>BATCH BREW</td>
+                      <td>DAILY FILTER OFFERING</td>
+                  </tr> 
+                  <!-- row 12 - filter 2 -->
+                  <tr>
+                      <td></td>
+                      <td>COLD BREW</td>
+                      <td>SNAP CHILLED SPECIALTY SINGLE ORIGIN</td>
+                  </tr>
+                  <!-- row 13 - filter 3 -->
+                  <tr>
+                      <td></td>
+                      <td>V60</td>
+                      <td>EXOTIC & RARE FILTER SPECIALTY COFFEE</td>
+                  </tr>   
+                  <!-- row 14 - filter 4 -->
+                  <tr>
+                      <td></td>
+                      <td>BARISTA FLIGHT</td>
+                      <td>EESPRESSO, FLAT WHITE, FILTER COFFEE - BARISTA'S CHOICE</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="card">
-              <img src="./img/kristy.png" alt="kristy">
-              <h3 class="text-xl font-bold">kristy</h3>
-              <p>Meet Kristy!
-                A super skilled barista with 16 years experience (therefore more qualified than Corey 😂).
-                
-                When she’s not looking after her 3 wonderful kids, you’ll find her commanding the coffee bar, knocking out some of the best coffee you’re ever likely to have!
-                
-                If Kristys on the bar, one thing you can bank on, is getting an unreal brew..</p>
-            </div>
-            <!-- Add more team member cards as needed here -->
-          </div>
-        </section>
-    <footer>    
-      <ul>
-        Specialty Brews
-      </ul>
-      <p>65 Hawthorn Road, Kilsyth</p>
-      <p>Mon - Fri: 6am - 2pm</p>
-      <p>Weekends: Closed</p>
-      <p>&copy; 2024, Cup</p>
-    </footer>
-    <script src="index.js"></script>
+          </section>
+                    
+          <section id="team" class="mt-8 p-6 mb-4">
+            <h2 class="text-2xl font-bold mb-4">Meet the Team</h2>
+            <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 grid-rows-2 lg:grid-cols-3" id="team-display">
+              <div class="card" id="corey-card">
+                <div class="overflow-hidden rounded-full w-40 h-40 mx-auto mb-4">
+                  <img src="./img/corey.webp" alt="corey" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                </div>
+                <h3 class="text-xl font-bold text-center">corey</h3>
+                <p class="text-center">Meet Corey! A well seasoned coffee expert with over 15 years experience on the bar. As well as being a competition level barista, he’s also the head of coffee and wholesale accounts at @motobeanroasters. Got coffee questions? Fire them all at this man, to find your answers!</p>
+              </div>
+              <div class="card" id="kristy-card">
+                <div class="overflow-hidden rounded-full w-40 h-40 mx-auto mb-4">
+                  <img src="./img/kristy.webp" alt="kristy" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                </div>
+                <h3 class="text-xl font-bold text-center">kristy</h3>
+                <p class="text-center">Meet Kristy! A super skilled barista with 16 years experience. When she’s not looking after her 3 wonderful kids, you’ll find her commanding the coffee bar, knocking out some of the best coffee you’re ever likely to have! If Kristy is on the bar, one thing you can bank on, is getting an unreal brew.</p>
+              </div>
+              <!-- Add more team member cards as needed here -->
+            </div> 
+          </section>       
+          
+          <footer class="footer p-6 flex flex-col md:flex-row justify-between items-center md:items-start w-full"> 
+            
+            <section class="text-center md:text-right">
+              <ul>65 Hawthorn Road, Kilsyth</ul>
+              <ul>Mon - Fri: 6am - 2pm</ul>
+              <ul>Weekends: Closed</ul>
+              <ul>Copyright &copy; 2024, Cup.</ul>
+            </section>
+          </footer>
+          
+    </div> 
+      <script src="index.js"></script>
   </body>
 </html>
