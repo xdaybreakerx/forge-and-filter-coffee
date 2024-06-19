@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cup.</title>
+    <link rel="icon" type="image/x-icon" href="./img/icon.png">
     <link href="output.css" rel="stylesheet" />
   </head>
   <body>
@@ -46,15 +47,15 @@
       </label>
     </div>
 
-      <div class="container mx-auto p-4">
-          <section id="about">
-            <h2 class="text-2xl font-bold mb-4">About</h2>
+      <div class="container flex-col mx-auto p-4 pb-4">
+          <section class="mb-4" id="about">
+            <h2 class="text-2xl font-bold">About</h2>
             <p>Our humble little espresso bar showcases some of the best coffees in the world. We put the time in to hand select and meticulously roast all of our own coffee.</p>
           </section>
 
              
           
-          <section id="menu" class="mt-8">
+          <section id="menu" class="mt-8 pb-6 ">
             <h2 class="text-2xl font-bold mb-4">Menu</h2>
 
             <div class="overflow-x-auto">
@@ -151,19 +152,25 @@
             </div>
           </section>
           
-          <section id="team" class="mt-8">
+          <!-- <div class="flex flex-col w-full lg:flex-row">
+            <div class="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">content</div> 
+            <div class="divider lg:divider-horizontal">OR</div> 
+            <div class="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center">content</div>
+          </div> -->
+          
+          <section id="team" class="mt-8 p-6 mb-4">
             <h2 class="text-2xl font-bold mb-4">Meet the Team</h2>
             <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="team-display">
-              <div class="card">
+              <div class="card" id="corey-card">
                 <div class="overflow-hidden rounded-full w-40 h-40 mx-auto mb-4">
-                  <img src="./img/corey.png" alt="corey" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                  <img src="./img/corey.webp" alt="corey" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300 ease-in-out">
                 </div>
                 <h3 class="text-xl font-bold text-center">corey</h3>
                 <p class="text-center">Meet Corey! A well seasoned coffee expert with over 15 years experience on the bar. As well as being a competition level barista, he’s also the head of coffee and wholesale accounts at @motobeanroasters. Got coffee questions? Fire them all at this man, to find your answers!</p>
               </div>
-              <div class="card">
+              <div class="card" id="kristy-card">
                 <div class="overflow-hidden rounded-full w-40 h-40 mx-auto mb-4">
-                  <img src="./img/kristy.png" alt="kristy" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+                  <img src="./img/kristy.webp" alt="kristy" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300 ease-in-out">
                 </div>
                 <h3 class="text-xl font-bold text-center">kristy</h3>
                 <p class="text-center">Meet Kristy! A super skilled barista with 16 years experience (therefore more qualified than Corey 😂). When she’s not looking after her 3 wonderful kids, you’ll find her commanding the coffee bar, knocking out some of the best coffee you’re ever likely to have! If Kristy is on the bar, one thing you can bank on, is getting an unreal brew.</p>
@@ -172,15 +179,21 @@
             </div>
           </section>     
           
-      <footer>    
-        <ul> Coffee + Eats </ul> 
-        <ul> Specialty Brews </ul>
-        <ul>65 Hawthorn Road, Kilsyth</ul>
-        <ul>Mon - Fri: 6am - 2pm</ul>
-        <ul>Weekends: Closed</ul>
-        <ul>Copyright &copy; 2024, Cup.</ul>
-      </footer>
-      <script src="index.js"></script>
+          <footer class="footer-center p-6 flex flex-col md:flex-row justify-between">
+            <section>
+              <ul> Coffee + Eats </ul> 
+              <ul> Specialty Brews </ul>
+            </section>    
+            
+            <section>
+              <ul>65 Hawthorn Road, Kilsyth</ul>
+              <ul>Mon - Fri: 6am - 2pm</ul>
+              <ul>Weekends: Closed</ul>
+              <ul>Copyright &copy; 2024, Cup.</ul>
+            </section>
+          </footer>
+          
     </div>
+      <script src="index.js"></script>
   </body>
 </html>
